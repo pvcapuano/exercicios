@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Fazer um algoritmo que leia um número inteiro positivo menor
+    // do que 9999 e imprima os milhares, as centenas as dezenas e
+    // as unidades.
+    // Exemplo: se for lido o valor 0534, a saída deverá ser:
+    // Milhares: 0
+    // Centenas: 5
+    // Dezenas: 3
+    // Unidades: 4
+    // Obs: Não é preciso verificar se o número digitado é realmente
+    // inteiro positivo menor do que 9999. Assuma que o usuário
+    // digitará a entrada corretamente.
+
+    let numero = parseInt(prompt('Digite um numero menor 9999)'))
+
+    if(numero <= 9999){
+        let unidade = parseInt((numero/1) % 10)
+        let dezena = parseInt((numero/10) % 10)
+        let centena = parseInt((numero/100) % 10)
+        let milhar = parseInt((numero/1000) % 10)
+
+        document.write(unidade + '<br>')
+        document.write(dezena + '<br>')
+        document.write(centena + '<br>')
+        document.write(milhar + '<br>')
+    } else {
+        alert('Numero inválido')
+    }
+
+    
+
+    </script>
+</body>
+</html>

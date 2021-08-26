@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Uma conta telefônica é composta dos seguintes custos:
+// Assinatura: R$ 32,00,
+// Impulsos para telefone fixo: R$ 0,09 por impulso que
+// exceder a 90. Considere que este valor é sempre maior do que
+// 90.
+// Impulsos para celular: R$ 0,35 por impulso.
+// Faça um algoritmo para ler a quantidade de impulsos para fixo e
+// celular e calcular o valor da conta.
+// Teste o algoritmo para 254 impulsos para telefone fixo e 30
+// para celular.
+    let assinatura = 32.00 
+
+    let fixo = prompt('Fixo')
+    let impulFixo = (fixo - 90) * 0.09
+
+    let cel = prompt('celular')
+    let impulCel = cel * 0.35
+
+   let conta = assinatura + impulFixo + impulCel
+   document.write(conta)
+
+
+    </script>
+</body>
+</html>
