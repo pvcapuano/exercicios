@@ -10,12 +10,12 @@
     <script>
         // escrever um numero e mostrar a tabuada dele até 10
 
-        // let numero = parseInt((prompt('Digite um numero:')))
+        let numero = parseInt((prompt('Digite um numero:')))
 
-        // for(i=0; i<11; i++){
-        //     let mult = numero * i
-        //     document.write(numero + ' x ' + i + ' = ' + mult + '<br>')
-        // }
+        for(i=0; i<11; i++){
+            let mult = numero * i
+            document.write(numero + ' x ' + i + ' = ' + mult + '<br>')
+        }
 
         // mostre na tela todos os anos a partir de 1004 até o ano 2017, 
         // pulando de quatro em quatro anos.
@@ -24,9 +24,19 @@
              document.write (bisexto + "<br>")
          }
          
-         
-        
+        // aplique a lógica necessário para mostrar os anos que são realmente bissextos, 
+        // respeitando a regra: Os anos bissextos são múltiplos de 4, 
+        // não múltiplos de 100 (1900 não é bissexto) e múltiplos de 400 (2000 é bissexto).
 
+        let bisexto = 1004
+        while(bisexto < 2017){
+            if(bisexto % 100 === 0 && bisexto % 400 != 0){
+                bisexto += 4
+        } else {
+            document.write(bisexto + '<br>')
+            bisexto += 4
+        }
+    }
     </script>
 </body>
 </html>

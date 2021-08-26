@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Uma empresa paga o salário básico de R$ 1000,00 para seus
+    // funcionários.
+    // Se o funcionário tiver filhos, a empresa adiciona R$ 0,50 de
+    // auxílio escolaridade por cada filho.
+    // Se o funcionário for antigo na empresa, também receberá
+    // bonificação: R$ 100,00 a cada dois anos.
+    // Fazer um algoritmo para ler o número de filhos e tempo de
+    // trabalho e imprimir o salário do funcionário.
+    
+    let salario = 1000
+    let filhos = parseFloat((prompt('Quantos filhos?')))
+    let somaFilhos = filhos * 0.5
+    let somaCasa = 0
+    
+    let tempoDeCasa = parseFloat((prompt('Quantos tempo de casa?')))
+
+    if(tempoDeCasa % 2 === 0) {
+        somaCasa =  (tempoDeCasa/2) * 100
+    } else {
+        somaCasa
+    }
+
+    let somaSalario = salario + somaFilhos + somaCasa
+    
+
+    document.write(somaFilhos + '<br>')
+    document.write(somaCasa + '<br>')
+    document.write(somaSalario)
+    
+
+
+
+    </script>
+</body>
+</html>
