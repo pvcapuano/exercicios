@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <script>
+// Uma eletricista precisa comprar um fio que passará pelo forro
+// do telhado por toda diagonal de uma casa no formato
+// retangular. Como ele não tem condições de medir a diagonal
+// com precisão, a solução que encontrou foi medir os lados da
+// casa e calcular a diagonal pelo Teorema de Pitágoras (a2
+//  = b2
+//  +
+// c
+// 2
+// ).
+// Faça um algoritmo que leia o valor dos lados da casa e imprima o
+// tamanho necessário para o fio.
+// Teste o algoritmo para os valores 11.5 e 12.6.
+
+    let ladoA = parseFloat(11.5)
+    let ladoB = parseFloat(12.6)
+
+    let diagonal = Math.sqrt((ladoA * ladoA) + (ladoB * ladoB)).toFixed(2)
+
+    document.write(diagonal)
+
+    </script>
+</body>
+</html>
