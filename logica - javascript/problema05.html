@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Fazer um algoritmo que leia três dígitos decimais (número
+// inteiro positivo menor do que 10) e imprima cada número, e a
+// soma de todos os números formados pelos três dígitos sem
+// repetição.
+// Exemplo: se forem lidos os valores 2,3,4, a saída deverá ser:
+// 234
+// 243
+// 324
+// 342
+// 432
+// 423
+// soma:
+// 19980
+    
+    let a = 2
+    let b = 3
+    let c = 4
+
+    let somaA1 = `${a}${b}${c}`
+    let a1 = parseFloat(somaA1)
+    let somaA2 = `${a}${c}${b}`
+    let a2 = parseFloat(somaA2)
+    let somaB1 = `${b}${a}${c}`
+    let b1 = parseFloat(somaB1)
+    let somaB2 = `${b}${c}${a}`
+    let b2 = parseFloat(somaB2)
+    let somaC1 = `${c}${a}${b}`
+    let c1 = parseFloat(somaC1)
+    let somaC2 = `${c}${b}${a}`
+    let c2 = parseFloat(somaC2)
+    
+    let somaTotal = a1 + a2 + b1 + b2 + c1 + c2
+
+    document.write(somaTotal)
+    
+    </script>
+</body>
+</html>
