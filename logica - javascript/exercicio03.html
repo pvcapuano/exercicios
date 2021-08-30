@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button class="adicao" onclick="adicao()"> + </button>
+    <button class="subtracao" onclick="subtracao()"> - </button>
+    <button class="multiplicacao" onclick="multiplicacao()"> * </button>
+    <button class="divisao" onclick="divisao()"> / </button>
+
+    <div class="output"></div>
+    <script>
+        let n = parseFloat(prompt('digite um numer'))
+        escreve()
+
+        function escreve() {
+            let output = document.querySelector('.output')
+            output.innerHTML = n
+        }
+
+        function adicao() {
+            let soma = parseFloat(prompt('digite um numero'))
+            n += soma
+            escreve()
+        }
+
+        function subtracao(){
+            let subtracao = parseFloat(prompt('digite um numero'))
+            n -= subtracao
+            escreve()
+        }
+
+        function divisao(){
+            let divisao = parseFloat(prompt('digite um numero'))
+            n /= divisao
+            escreve()
+        }
+
+        function multiplicacao(){
+            let multiplicacao = parseFloat(prompt('digite um numero'))
+            n *= multiplicacao
+            escreve()
+        }
+
+    </script>
+</body>
+</html>

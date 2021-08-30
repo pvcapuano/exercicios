@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="mostrarTabuada()">Criar tabuada</button>
+    <button onclick="limparTabuada()">Limpar tabuada</button>
+
+    <div id="output"></div>
+    <script>
+        // pedir pro usuario digitar um numero e mostrar sua tabuada até 10
+        // criar um botao para criar e limpar
+        let n = parseFloat(prompt('digite um numero'))
+        let output = document.querySelector('#output')
+        let mensagem = ''
+
+        function mostrarTabuada(){
+            limparTabuada()
+
+            for(i = 0; i < 10; i++){
+                mensagem += n + " x " + i + " = " + (n * i) + "<br>"
+            }
+            output.innerHTML = mensagem   
+        }
+
+        function limparTabuada(){
+            mensagem = ''
+            output.innerHTML = mensagem
+        }
+    </script>
+</body>
+</html>
