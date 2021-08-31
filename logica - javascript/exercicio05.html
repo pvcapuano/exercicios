@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="adicao" onclick="calcular('soma')"> + </button>
+    <button class="subtracao" onclick="calcular('subtracao')"> - </button>
+    <button class="multiplicacao" onclick="calcular('multiplicacao')"> * </button>
+    <button class="divisao" onclick="calcular('divisao')"> / </button>
+
+    <div class="output"></div>
+    <script>
+
+        // refatorar o exercicio 03.
+        let n = parseFloat(prompt('digite um numero'))
+        escreve()
+
+        function escreve() {
+            let output = document.querySelector('.output')
+            output.innerHTML = n
+        }
+
+        function calcular(operacao){
+            let outroNumero = parseFloat(prompt('digite outro numero'))
+
+            switch(operacao){
+                case 'soma': 
+                n += outroNumero
+                break
+                case 'subtracao':
+                n-= outroNumero
+                break
+                case 'multiplicacao':
+                n *= outroNumero
+                break
+                case 'divisao':
+                n /= outroNumero
+                break
+            }
+
+            escreve()
+
+        }
+
+    </script>
+</body>
+</html>

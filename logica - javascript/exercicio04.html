@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="output"></div>
+    <button onclick="areaTotal(altura, largura)">Calcular area</button>
+
+    <script>
+        // pedir para o usuario digitar 2 numeros que representam os 
+        // lados do retangulo assim que a pagina for carregada. 
+        // Mostrar na tela a area total quand clicar num botao
+
+        let altura = parseFloat(prompt('digita a altura'))
+        let largura = parseFloat(prompt('digite a largura'))
+
+        let output = document.querySelector('.output')
+
+        function areaTotal(altura, largura) {
+            let area = altura * largura
+            output.innerHTML = area
+        }
+    </script>
+</body>
+</html>
