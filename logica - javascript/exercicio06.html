@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="output"></div>
+    <button onclick="mostrarAreaOutput()">Mostrar na div</button>
+    <button onclick="mostrarAreaAlert()">Mostrar no alert</button>
+
+    <script>
+        // pedir para o usuario digitar 2 numeros que representam os 
+        // lados do retangulo. mostrar na tela a area total de duas formas distintas. 
+        // num alert e numa div#output(dependendo do botao clicado). 
+        // esse codigo nao precisa ser executado quando a pagina for carregada
+
+
+        
+
+        
+
+        function mostrarAreaAlert(){
+            let altura = parseFloat(prompt('digita a altura'))
+            let largura = parseFloat(prompt('digite a largura'))
+            let area = areaTotal(altura, largura)
+            alert(area)
+        }
+
+        function mostrarAreaOutput(){
+            let altura = parseFloat(prompt('digita a altura'))
+            let largura = parseFloat(prompt('digite a largura'))
+            let output = document.querySelector('.output')
+            let area = areaTotal(altura, largura)
+            output.innerHTML = area
+        }
+
+        function areaTotal(a, l) {
+            return a * l
+            
+        }
+    </script>
+</body>
+</html>
