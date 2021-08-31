@@ -17,21 +17,16 @@
         // num alert e numa div#output(dependendo do botao clicado). 
         // esse codigo nao precisa ser executado quando a pagina for carregada
 
-
-        
-
-        
-
         function mostrarAreaAlert(){
-            let altura = parseFloat(prompt('digita a altura'))
-            let largura = parseFloat(prompt('digite a largura'))
+            let altura = parseFloat(prompt('digita a altura...'))
+            let largura = parseFloat(prompt('digite a largura...'))
             let area = areaTotal(altura, largura)
             alert(area)
         }
 
         function mostrarAreaOutput(){
-            let altura = parseFloat(prompt('digita a altura'))
-            let largura = parseFloat(prompt('digite a largura'))
+            let altura = parseFloat(prompt('digita a altura?'))
+            let largura = parseFloat(prompt('digite a largura?'))
             let output = document.querySelector('.output')
             let area = areaTotal(altura, largura)
             output.innerHTML = area
