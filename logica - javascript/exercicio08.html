@@ -7,18 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-
     <div class="output"></div>
     <script>
-        let pessoas = ['joao', 'jose', 'maria']
-        pessoas.push('gabriel')
-
-        let msg = ''
-        for(i = 0; i < pessoas.length; i++){
-            msg+= pessoas[i] + '<br>'
-        }
         let output = document.querySelector('.output')
-        output.innerHTML = msg
+
+        let dias = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado']
+
+        let hoje = new Date()
+        let diaSemana = hoje.getDay()
+
+        let msg = dias[diaSemana]
+
+        output.innerHTML = msg 
+
+
     </script>
 </body>
 </html>
