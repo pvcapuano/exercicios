@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="output"></div>
+    <script>
+       /* Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos
+brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total
+de eleitores. */
+
+        let votos = 100
+        let brancos = 20 / votos
+        let nulos = 30 / votos
+        let validos = 50 / votos
+
+        let output = document.querySelector('.output')
+        let resultado = `De ${votos} votos, tivemos ${validos}% de votos validos, 
+        ${nulos}% de votos nulos e ${brancos}% de votos brancos`
+
+        output.innerHTML = resultado
+    </script>
+</body>
+</html>
