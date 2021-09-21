@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="output"></div>
+    <script>
+        // calcular o numero de notas possiveis no qual o valor pode ser decomposto. 
+        // as notas consideradas sao 100, 50, 20, 10, 5 , 2 e 1. 
+        // depois masostre o valor lido e a relação das notas necessarias
+
+        let valor = parseInt(prompt('digite um numero'))
+        const notas = [100, 50, 20, 10, 5, 2, 1]
+        let output = document.querySelector('.output')
+
+        n100 = parseInt(valor / 100)
+        result = valor % 100
+
+        n50 = parseInt(result / 50)
+        result = result % 50
+
+        n20 = parseInt(result / 20)
+        result = result % 20
+        
+        n10 = parseInt(result / 10)
+        result = result % 10
+
+        n5 = parseInt(result / 5)
+        result = result % 5
+
+        n2 = parseInt(result / 2)
+        result = result % 2
+
+        n1 = parseInt(result / 1)
+        result = result % 1
+
+        document.write(n100 + '<br>')
+        document.write(n50 + '<br>')
+        document.write(n20 + '<br>')
+        document.write(n10 + '<br>')
+        document.write(n5 + '<br>')
+        document.write(n2 + '<br>')
+        document.write(n1 + '<br>')
+
+
+    </script>
+</body>
+</html>
