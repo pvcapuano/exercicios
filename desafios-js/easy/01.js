@@ -1,7 +1,15 @@
 function flatAndSort(arr) {
-  const flatedNadSorted = arr.flat().sort();
+  /* const numbers = [];
 
-  return flatedNadSorted;
+  arr.forEach((list) => {
+    numbers.push(...list);
+  });
+
+  return numbers.sort(function (a, b) {
+    return a - b;
+  }); */
+
+  return arr.flat().sort((a, b) => a - b);
 }
 
 console.log(
