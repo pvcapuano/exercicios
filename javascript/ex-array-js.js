@@ -25,3 +25,10 @@ let maiusculo = hitchedSpaceships.map((spaceship) => {
 console.log(filtrado);
 console.log(pendente);
 console.log(maiusculo);
+
+
+
+
+
+
+
