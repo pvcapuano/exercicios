@@ -9,7 +9,7 @@ class Spaceship {
   speedUp(acceleration) {
     this.currentVelocity += acceleration;
     if (this.currentVelocity > this.maxVel) {
-      console.log("velocidade ultrapassada");
+      console.log("velocidade ultrapassada!!");
     }
   }
 }
@@ -29,7 +29,7 @@ class DiscoverySpaceship extends Spaceship {
 }
 
 let darwin = new DiscoverySpaceship("Darwin", 10, 200);
-let fenix = new BattleSpaceship("Fenix", 8, 240);
+let fenix = new BattleSpaceship("Fênix", 8, 240);
 
 console.log(darwin);
 console.log(fenix);
