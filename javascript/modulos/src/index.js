@@ -31,8 +31,8 @@ const velocityAfter2Seconds = (velocity, acceleration) => {
         console.log(`Nova velocidade: ${velocity}`);
         resolve(velocity);
       } else {
-        console.log("Aceleração inválida");
-        reject("Não possui aceleração");
+        console.log("Aceleração inválida!");
+        reject("Não possui aceleração!");
       }
     }, 1000);
   });
@@ -40,4 +40,4 @@ const velocityAfter2Seconds = (velocity, acceleration) => {
 
 velocityAfter2Seconds(komodoShip.velocity, komodoShip.acceleration);
 
-console.log("Execução de Promises");
+console.log("Execução de Promises!");
